@@ -1,0 +1,59 @@
+header.wordimg{
+  margin: 0cm;
+width: auto; 
+text-align: center;
+
+}
+body {
+margin: 0;
+}
+nav.menu-nav ul li.btn{
+list-style-type: none;
+display: inline-block;
+height: 1.5cm;
+
+}
+nav.menu-nav{
+background-color: gray;
+margin-top: 0cm;
+}
+nav.menu-nav ul li.btn a{
+text-decoration: none;
+color: blanchedalmond;
+background-color: gray ;
+padding-left: 10px;
+font-size: 40px;
+}
+nav.menu-nav ul li.btn:hover a{
+color:rgb(73, 73, 73);
+transition:0.3s all;
+}
+section.cx cvorps{
+background-color: rgba(67, 23, 177, 0.775);
+margin: 0%;
+height: 100%;
+}
+div#contenu div{
+display:inline-table;
+width: 50%;
+}
+div#contenu div.qui{ 
+color: aliceblue;
+}
+div#contenu div.où{ 
+margin-left: 813px;
+color: aliceblue;
+}
+div#contenu div.comment{
+color: aliceblue;
+}
+footer.pied {
+background-color: gray;
+color: aliceblue;
+text-shadow: 10ch red;
+height: 2cm;
+}
+header.Artistes{
+background-color: rgb(91, 91, 91);
+color: ;
+}
