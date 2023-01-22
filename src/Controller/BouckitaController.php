@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class BouckitaController extends AbstractController
 {
-    #[Route('/bouckita', name: 'app_bouckita')]
+    #[Route('/bouckita/base', name: 'app_bouckita_base')]
     public function base(): Response
     {
         return $this->render('bouckita/base.html.twig', [

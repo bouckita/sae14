@@ -10,16 +10,16 @@
 <body>
      <header >
      </div> 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="base.html.twig">GISCARD</a>
+      <a class="navbar-brand" href="template/bouckita/base.html.twig">GISCARD</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="C:\Users\Alain\sae14\templates\base.html">Moi
+            <a class="nav-link active" href="template/bouckita/base.html.twig">Moi
               <span class="visually-hidden"></span>
             </a>
           </li>
@@ -32,9 +32,6 @@
           <li class="nav-item">
             <a class="nav-link" href="formulaire.html.twig">Formulaire</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="plus.html.twig">Plus</a>
-          </li>
         </ul>
       </div>
     </div>
@@ -46,69 +43,79 @@
            </h6>
          </h5>
        </header>
-       <form>
-          <fieldset>
-            <p align="center">Veuillez saisir les informations demandées ci-dessous.</p>
-            <p align="center">Rassurez vous vos informations ne seront pas diffusés à qui que ce soit.</p>
-              </div>
-            </div>
-            <div align="center" class="form-group">
-              <label for="exampleInputEmail1" class="form-label mt-4">Votre adresse électronique</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="commeexemple@gmail.com">
-              <small id="emailHelp" class="form-text text-muted"></small>
-            </div>
-            <div align="center" class="form-group">
-               <label for="exampleInputPassword1" class="form-label mt-4">Pays</label>
-               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
-             </div>
-            <div align="center" class="form-group">
-              <label for="exampleInputPassword1" class="form-label mt-4">Numéro de téléphone</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
-            </div>
-            <fieldset align="center" class="form-group">
-               <legend class="mt-4">Etes vous un DRH?</legend>
-               <div class="form-check">
-                 <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                 <label class="form-check-label" for="optionsRadios1">
-                   Oui
-                 </label>
-               </div>
-               <div class="form-check">
-                 <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                 <label class="form-check-label" for="optionsRadios2">
-                   Non
-                 </label>
-               </div>
-             </fieldset>
-            <div align="center" class="form-group">
-               <label for="exampleInputPassword1" class="form-label mt-4">Nom de l'entreprise</label>
-               <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
-             </div>
-            <fieldset class="form-group">
-              <legend class="mt-4">Sexe</legend>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Homme
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
-                <label class="form-check-label" for="flexCheckChecked">
-                  Femme
-                </label>
-              </div>
-              <div class="form-check">
-               <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
-               <label class="form-check-label" for="flexCheckChecked">
-                 Autre
-               </label>
-             </div>
-            </fieldset>
-            <div align="center" class="d-grid gap-2">
-            <button align="center" type="submit" class="btn btn-primary">Télécharger</button>
-          </div>
-          </fieldset>
-        </form>
-   </body>
+<form id="inscription">  
+               <fieldset> 
+                 <div class="form-group">
+                   <label class="td" for="nom">Nom</label>
+                   <input type="text"  class="form-control" id="inputFieldId"  placeholder="exemple: votre nom" required >
+                   <div class="erreur">*</div>
+                 </div>
+
+                 <div class="form-group">
+                   <label class="poot" for="number">Numéro</label>
+                   <input  class="form-control" id="inputFieldId" type="text" pattern="[0-9]+" placeholder="exemple:012345678" required >
+                   <div class="erreur">*</div>
+                 </div>
+
+                  <div class="form-group">
+                   <label class="poot" for="number">Pays</label>
+                   <input  class="form-control" id="inputFieldId" type="text"  placeholder="exemple:France" required >
+                   <div class="erreur">*</div>
+                 </div>
+  
+                 <div class="form-group">
+                   <label class="lid" for="email">Adresse électronique</label>
+                   <input type="email"  class="form-control" id="inputFieldId"  placeholder=" ex: votrenom@domaine.com" required>
+                   <div class="erreur">*</div>
+                 </div>
+                 <div class="form-group">
+                   <label class="titi" for="nom">Nom d'entreprise</label>
+                   <input type="text"  class="form-control" id="inputFieldId"  placeholder="exemple: Experis">
+                 </div>
+                 <div class="form-group">
+                   <label class="cool" color="white" for="bio">Si vous avez un petit message veuilez le saisir ci-dessous</label>
+                   <textarea class="form-control" id="bio" rows="3"></textarea>
+                 </div>
+               </fieldset>
+               <div align="center">
+                <input type="submit" href="moncv.pdf" value="Télécharger">
+                </div>
+             </form>
+</body>
+<script> 
+          document.forms["inscription"].addEventListner("submit", fonction(e)) {
+          
+          var erreur;
+          var inputs= this;
+
+          for (var i=0; i< inputs.length; i++) {
+            console.log(intputs[i]);
+            if (!inputs[i].value) {
+              erreur="Veuillez remplir tous les champs";
+            }
+
+            }
+           if (erreur) {
+            e.preventDefault();
+            document.getElementById("erreur").innerHTML= erreur;
+            return false;
+
+           } else {
+             alert('Formulaire validé !')
+           }
+
+
+          });
+</script> 
+  <footer style="background-color:rgb(66, 176, 250)">
+    <h6 align="center">
+      *********************************
+    </h6>
+    <h6 align="center">
+      ****************
+    </h6>
+    <h6 align="center">
+      Copyright © Giscard - 2022-2023 - All right reserved
+    </h6>
+  </footer>
    
