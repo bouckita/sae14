@@ -8,13 +8,14 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class BouckitaController extends AbstractController
 {
-    #[Route('/bouckita/base', name: 'app_bouckita_base')]
-    public function base(): Response
+    #[Route('/bouckita', name: 'app_bouckita')]
+    public function base(): Response 
     {
         return $this->render('bouckita/base.html.twig', [
             'controller_name' => 'BouckitaController',
         ]);
     }
+
     #[Route('/bouckita/cv', name: 'app_bouckita_cv')]
     Public function cv(): Response 
     {
@@ -22,6 +23,7 @@ class BouckitaController extends AbstractController
             'controller_name' => 'BouckitaController',
         ]);
     }
+
     #[Route('/bouckita/portfolio', name: 'app_bouckita_portfolio')]
     Public function portfolio(): Response 
     {
@@ -29,6 +31,7 @@ class BouckitaController extends AbstractController
             'controller_name' => 'BouckitaController',
         ]);
     }
+
     #[Route('/bouckita/formulaire', name: 'app_bouckita_formulaire')]
     Public function formulaire(): Response 
     {
@@ -36,6 +39,7 @@ class BouckitaController extends AbstractController
             'controller_name' => 'BouckitaController',
         ]);
     }
+
     #[Route('/plus', name: 'app_bouckita_plus')]
     Public function plus(): Response 
     {
